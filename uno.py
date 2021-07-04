@@ -56,7 +56,7 @@ class UNO:
     def makeDecks(self):
         for player in self.players:
             deck = []
-            for i in range(20):
+            for i in range(7):
                 card = random.choice(self.mainDeck)
                 deck.append(card)
                 self.mainDeck.remove(card)
