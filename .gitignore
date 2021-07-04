@@ -1,0 +1,4 @@
+#Python compiler stuff
+__pycache__
+#Bot token
+.env
