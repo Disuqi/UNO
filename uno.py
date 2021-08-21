@@ -150,7 +150,6 @@ class UNO:
                 self.players.reverse()
                 self.decks.reverse()
 
-
     def nextPlayer(self):
         nextPlayer = self.players[self.nextTurn()]
         return nextPlayer
@@ -177,6 +176,7 @@ class UNO:
             return self.won
         else:
             return None
+
     def checkCard(self, card):
         result = False
         if card.__contains__('+'):
@@ -212,6 +212,7 @@ class UNO:
             if card.endswith('➕'):
                 return True
         return False
+    
     def checkMainDeck(self):
         if len(self.mainDeck) <= 4:
             self.mainDeck += self.playedCards
